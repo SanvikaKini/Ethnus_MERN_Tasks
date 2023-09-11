@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task 2</title>
+    <style>
+      ul#ver {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        width: 180px;
+      }
+      .vertical {
+        width: 190px;
+        border: solid 1px;
+        padding-left: 10px;
+        padding-top: 15px;
+      }
+      #ver li {
+        background-color: lightblue;
+      }
+      #ver li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      #ver li a:hover {
+        background-color: orange;
+        color: white;
+      }
+
+      ul#hor {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #c6c6c6;
+      }
+      #hor li {
+        float: left;
+        border-right: 1px solid blue;
+      }
+
+      #hor li a {
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      #hor li a:hover {
+        background-color: #8e8e8e;
+        color: white;
+      }
+      .horizontal {
+        width: 500px;
+        border: solid 1px;
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="vertical-1">
+        <h4>Vertical Naviagation Bar</h4>
+        <div class="vertical">
+          <ul id="ver">
+            <li><a href="./blank.html" target="_blank">Home</a></li>
+            <li><a href="./blank.html" target="_blank">Java</a></li>
+            <li><a href="./blank.html" target="_blank">CSS</a></li>
+            <li><a href="./blank.html" target="_blank">HTML</a></li>
+            <li><a href="./blank.html" target="_blank">Bootstrap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="horizontal-1">
+        <h4>Horizontal Navigation Bar</h4>
+        <div class="horizontal">
+          <ul id="hor">
+            <li>
+              <a href="./blank.html" target="_blank">Home</a>
+            </li>
+            <li>
+              <a href="./blank.html" target="_blank">Java</a>
+            </li>
+            <li>
+              <a href="./blank.html" target="_blank">CSS</a>
+            </li>
+            <li>
+              <a href="./blank.html" target="_blank">HTML</a>
+            </li>
+            <li>
+              <a href="./blank.html" target="_blank">Bootstrap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
